@@ -10,7 +10,7 @@
     <?php
         foreach($arrayClients as $client){
     ?>      
-        }  
+      
         <tr>
             <td>
                 <?=$client['idClient'];?>
@@ -27,6 +27,10 @@
             <td>
                 <?=$client['adress'];?>
             </td>
-        </tr>  
+        </tr> 
+        
+        <?php
+           } 
+        ?>
   
 </table>

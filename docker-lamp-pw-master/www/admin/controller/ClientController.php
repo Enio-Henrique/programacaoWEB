@@ -6,7 +6,7 @@ class ClientController{
         require_once('views/templates/footer.php');
     }
     public function registerView(){
-        if(isset($_POST['accept'])){
+        if(!isset($_POST['accept'])){
             $accept = true;
         }else{
             $accept = false;
@@ -19,19 +19,24 @@ class ClientController{
             'gen' => $_POST['gen'],
             'accept' => $accept
         );
+        require_once('views/templates/header.php');
+        require_once('views/client/registerView.php');
+        require_once('views/templates/footer.php');
     }
     public function listClients(){
         require_once('models/ClientModel.php');
-        $clientModel = new ClientMoldel();
+        $clientModel = new ClientsModel();
         $result = $clientModel -> listClients();
 
         $arrayClient = array();
-        while($line -> $result -> fetch_assoc()){
-            array_push($arrayClient, $line);
+
+        while($clients = $result -> fetch_assoc()){
+            array_push($arrayClient, $clients);
         }
-        require_once('views/header.php');
+
+        require_once('views/templates/header.php');
         require_once('views/client/listClients.php');
-        require_once('views/footer.php');
+        require_once('views/templates/footer.php');
     }
 
 }

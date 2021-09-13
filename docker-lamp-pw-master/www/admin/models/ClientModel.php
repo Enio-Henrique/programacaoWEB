@@ -1,15 +1,15 @@
 <?php
 class ClientsModel{
-    var $result;
-   
-
+  
     public function listCLients(){
-        require_once('bd/ConnectClass.php');
-        $Oconn = new ConnectClass();
-        $Oconn -> openConnect();
-        $conn = $Oconn -> getConnect();
-        $sql = "SELECT * FROM 'clients";
-        $this -> result = $conn -> query($sql);
+        require_once('db/ConnectClass.php');
+        $connectClass = new ConnectClass();
+        $connectClass -> openConnect();
+        $connection = $connectClass -> getConn();
+
+        $sql = "SELECT * FROM 'clients'";
+
+        return $connection -> query($sql);
     }
 
     public function getConsult(){
