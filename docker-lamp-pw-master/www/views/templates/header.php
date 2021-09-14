@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/validaSex.js" ></script>
-    <link rel="stylesheet" href="assets/css/style.css">
   <title>nossa pagina html layout</title>
 </head>
 <body>
     <header class="">
-        <h1 >Minha area administrativa</h1>
-        <a href="?controller=main&action=logout">Sair</a>
+        <h1 class="cor" >Meu site em PHP</h1>
+        
     </header>
     
     <section>
@@ -24,9 +24,23 @@
             <ul>
             <h3 id="tituloMenu">Menu</h3>
                 <li class="menu">
-                   <a  href="?controller=main&action=home">Home</a>
+                   <a  href="?controller=site&action=home">Home</a>
                 </li>
-    
+                <li class="menu">
+                    <a  href="?controller=site&action=products">Produtos</a>
+                </li>
+                <li class="menu">
+                   <a  href="?controller=site&action=contacts">contatos</a>
+                </li>
+
+                <h3 class="pt-3">Clientes</h3>
+                <li class="menu">
+                   <a  href="?controller=client&action=register">Cadastro</a>
+                </li>
+
+                <li class="menu">
+                   <a  href="?controller=client&action=listClients">Listar Clientes</a>
+                </li>
             </ul>
 
            
@@ -34,4 +48,4 @@
         </nav>
         <article>
             
- 
+       

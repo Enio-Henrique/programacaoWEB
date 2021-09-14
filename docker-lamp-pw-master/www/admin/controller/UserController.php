@@ -2,8 +2,8 @@
 
 class UserController{
     public function validateLogin(){
-        $login = $_POST['login'];
         require_once('models/UserModel.php');
+        $login = $_POST['login'];
         $password = $_POST['password'];
         $UserModel = new UserModel();
         $result = $UserModel -> getUser($login);

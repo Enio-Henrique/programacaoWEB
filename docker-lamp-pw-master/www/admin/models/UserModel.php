@@ -12,7 +12,7 @@ class UserModel{
         SELECT * FROM users
         WHERE user='{$login}'
         ";
-
+        
         return $conn -> query($sql);
     }
 }

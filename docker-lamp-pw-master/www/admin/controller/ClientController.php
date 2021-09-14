@@ -24,15 +24,15 @@ class ClientController{
         require_once('views/templates/footer.php');
     }
     public function listClients(){
-        require_once('models/ClientModel.php');
-        $clientModel = new ClientsModel();
-        $result = $clientModel -> listClients();
+        require_once('admin/models/ClientModel.php');
+        $clientModel = new ClientModel();
+      $result = $clientModel -> listClients();
 
-        $arrayClient = array();
+        $arrayClients = array();
 
         while($clients = $result -> fetch_assoc()){
-            array_push($arrayClient, $clients);
-        }
+           array_push($arrayClients, $clients);
+         }
 
         require_once('views/templates/header.php');
         require_once('views/client/listClients.php');

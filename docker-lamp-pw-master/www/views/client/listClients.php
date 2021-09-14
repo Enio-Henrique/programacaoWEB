@@ -8,24 +8,24 @@
         <th>Endereco</th>
     </tr>
     <?php
-        foreach($arrayClients as $client){
+        foreach($arrayClients as $clients){
     ?>      
       
         <tr>
             <td>
-                <?=$client['idClient'];?>
+                <?=$clients['idClient'];?>
             </td>
             <td>
-                <?=$client['name'];?>
+                <?=$clients['name'];?>
             </td>
             <td>
-                <?=$client['email'];?>
+                <?=$clients['email'];?>
             </td>
             <td>
-                <?=$client['phone'];?>
+                <?=$clients['phone'];?>
             </td>
             <td>
-                <?=$client['adress'];?>
+                <?=$clients['address'];?>
             </td>
         </tr> 
         

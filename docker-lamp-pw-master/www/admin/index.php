@@ -1,5 +1,5 @@
 <?php
-    session_start();
+     session_start();
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -14,17 +14,22 @@
             case 'main':
                 require_once('controller/MainController.php');
                 $Main = new MainController();
-        
                 if(!isset($_GET['action'])){
-                    $Main -> index();
+                    
                 }else{
                     switch ($_REQUEST['action']) {
                         case 'index':
                             $Main -> index();
-                        break;
+                        break;  
                         case 'login':
                             $Main -> login();
-                            break;   
+                        break;  
+                       case 'logout':
+                            $Main -> logout();
+                        break;
+                        case 'home':
+                            $Main -> home();
+                        break;
                     }
                 }
             break;
@@ -38,6 +43,7 @@
                     switch ($_REQUEST['action']) {
                         case 'validateLogin':
                             $User -> validateLogin();  
+                        break;
                     }
                 }
             break;

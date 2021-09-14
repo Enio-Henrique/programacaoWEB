@@ -9,11 +9,11 @@ body{
 }
 
 header{
-    background-color: rgb(19, 201, 233, 0.356) ;
+    background-color: rgb(247, 247, 247) !important;
     text-align: center;
     padding: 20px;
     font-size: 25px;
-    color: rgb(253, 253, 253);
+    color: rgb(255, 251, 251);
 }
 
 #tituloMenu{
@@ -66,3 +66,4 @@ footer{
     text-align: center;
     color: #fff;
 }
+

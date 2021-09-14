@@ -1,5 +1,5 @@
 <?php
-class ClientsModel{
+class ClientModel{
   
     public function listCLients(){
         require_once('db/ConnectClass.php');
@@ -7,7 +7,7 @@ class ClientsModel{
         $connectClass -> openConnect();
         $connection = $connectClass -> getConn();
 
-        $sql = "SELECT * FROM 'clients'";
+        $sql = 'SELECT * FROM clients';
 
         return $connection -> query($sql);
     }
