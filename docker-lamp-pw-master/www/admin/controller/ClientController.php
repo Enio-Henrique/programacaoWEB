@@ -6,7 +6,7 @@ class ClientController{
         require_once('views/templates/footer.php');
     }
     public function registerView(){
-        if(!isset($_POST['accept'])){
+        if(isset($_POST['accept'])){
             $accept = true;
         }else{
             $accept = false;

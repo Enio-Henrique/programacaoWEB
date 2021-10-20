@@ -13,7 +13,7 @@ header{
     text-align: center;
     padding: 20px;
     font-size: 25px;
-    color: rgb(255, 251, 251);
+    color: rgb(5, 5, 5);
 }
 
 #tituloMenu{
@@ -58,6 +58,8 @@ section::after{
     display: table;
     content: "";
 }
+
+
 
 footer{
     background-color: rgb(230, 50, 50);

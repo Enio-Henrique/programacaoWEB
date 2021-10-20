@@ -13,8 +13,8 @@
   <title>nossa pagina html layout</title>
 </head>
 <body>
-    <header class="">
-        <h1 class="cor" >Meu site em PHP</h1>
+    <header class="bg-dark">
+        <h1 class="" >Meu site em PHP</h1>
         
     </header>
     
