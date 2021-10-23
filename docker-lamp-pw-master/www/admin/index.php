@@ -58,13 +58,31 @@
                     switch ($_REQUEST['action']) {
                         case 'register':
                             $client -> register();
-                            break;
+                        break;
                         case 'registerView':
                             $client -> registerView();
-                            break;
+                        break;
                         case 'listClients':
                             $client -> listClients();
-                            break;
+                        break;
+                        case 'createClient':
+                            $client -> createClient();
+                        break;
+                        case 'createClientAction':
+                            $client -> createClientAction();
+                        break;
+                        case 'updateClient':
+                            $id = $_GET['id'];
+                            $client -> updateClient($id);
+                        break;
+                        case 'updateClientAction':
+                            $id = $_GET['id'];
+                            $client -> updateClientAction($id);
+                        break;
+                        case 'deleteClient':
+                            $id = $_GET['id'];
+                            $client -> deleteClient($id);
+                        break;
                     }
                 }
             break;

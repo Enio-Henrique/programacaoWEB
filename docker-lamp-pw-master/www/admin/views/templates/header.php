@@ -13,25 +13,32 @@
   <title>nossa pagina html layout</title>
 </head>
 <body>
-    <header class="">
+    <header class="aling-middle">
         <h1 >Minha area administrativa</h1>
         <a href="?controller=main&action=logout">Sair</a>
     </header>
     
-    <section>
-        <nav>
+    <section class="container-fluid">
+        <div class="row">
+        <nav class="col-2 p-4">
            
-            <ul>
-            <h3 id="tituloMenu">Menu</h3>
-                <li class="menu">
-                   <a  href="?controller=main&action=home">Home</a>
+            <ul class="nav flex-column">
+            <h2>Menu</h2>
+                <li class="nav-item">
+                   <a class="nav-link"  href="?controller=main&action=home">Home</a>
                 </li>
-    
+                <h3>Clientes</h3>
+                <li  class="nav-item">
+                   <a class="nav-link"   href="?controller=client&action=listClients">Lista de Clientes</a>
+                </li>
+                <li  class="nav-item">
+                   <a class="nav-link"   href="?controller=client&action=createClient">- Novo Cliente</a>
+                </li>
             </ul>
 
            
            
         </nav>
-        <article>
+        <article class="col-10 p-4">
             
  

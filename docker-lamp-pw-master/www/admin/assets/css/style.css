@@ -24,15 +24,7 @@ header{
     padding: 10px;
 }
 
-nav{
-    float: left;
-    width: 15%;
-    background-color: rgb(187, 187, 187, 0.445);
-    min-height: 500px;
-    padding: 20px;
-    padding-left: 0px;
-    text-align: center;
-}
+
 
 nav ul{
     list-style-type: none;
@@ -43,11 +35,7 @@ nav a{
     text-decoration: none;
 }
 
-article{
-    float: left;
-    width: 85%;
-    padding: 30px;
-}
+
 
 article p{
     text-indent: 0px;

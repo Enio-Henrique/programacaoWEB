@@ -13,18 +13,19 @@
   <title>nossa pagina html layout</title>
 </head>
 <body>
-    <header class="bg-dark">
+    <header class="aling-middle bg-dark">
         <h1 class="" >Meu site em PHP</h1>
         
     </header>
     
-    <section>
-        <nav>
+    <section class="container-fluid">
+        <div class="row">
+        <nav class="col-2 p-4">
            
-            <ul>
-            <h3 id="tituloMenu">Menu</h3>
+            <ul class="nav flex-column">
+            <h3 >Menu</h3>
                 <li class="menu">
-                   <a  href="?controller=site&action=home">Home</a>
+                   <a class="nav-link"  href="?controller=site&action=home">Home</a>
                 </li>
                 <li class="menu">
                     <a  href="?controller=site&action=products">Produtos</a>
@@ -37,15 +38,11 @@
                 <li class="menu">
                    <a  href="?controller=client&action=register">Cadastro</a>
                 </li>
-
-                <li class="menu">
-                   <a  href="?controller=client&action=listClients">Listar Clientes</a>
-                </li>
             </ul>
 
            
            
         </nav>
-        <article>
+        <article class="col-10 p-4">
             
        

@@ -30,7 +30,7 @@
                }
             break;
             case 'client':
-                require_once('admin/controller/ClientController.php');
+                require_once('controller/ClientController.php');
                 $client = new ClientController();
                 if(!isset($_GET['action'])){
                    
